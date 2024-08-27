@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middlesex University Login</title>
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background-image: url("{{ url_for('static', filename='backgroundmdx.png') }}");
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login-container {
+            width: 300px; /* Adjusted the width */
+            height: 490px;
+            margin: auto;
+            padding: 3rem; /* Increased padding */
+            background: rgb(232, 15, 15); /* Made background semi-transparent */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center; /* Centered text */
+            border-radius: 2px; /* Added border radius */
+        }
+        .login-container img {
+            width: 50%; /* Adjust logo size */
+            margin-bottom: 10rem;
+        }
+        .login-container h2 {
+            color: #ffffff; /* Adjusted the color to match the logo */
+            font-size: 1.2rem; /* Increased font size */
+            margin-bottom: 2rem; /* Increased margin bottom */
+            text-align: center;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem; /* Increased font size */
+        }
+        .login-container input[type="submit"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            background-color: #000000; /* Matched button color with the logo */
+            color: #fff; /* Text color changed to white */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem; /* Increased font size */
+            margin-bottom: 1rem; /* Added margin bottom */
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #ffffff; /* Darkened the hover color */
+        }
+        .login-container a {
+            color: #ffffff; /* Adjusted the color to match the logo */
+            text-align: left;
+            font-size: 0.9rem; /* Adjusted font size */
+        }
+        
+        .login-container p {
+            color: #ffffff; /* Changed color for readability */
+            font-size: 0.8rem; /* Decreased font size for footer text */
+            margin-top: 2rem; /* Increased space above footer text */
+            text-align: left;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <br>
+        <img src="{{ url_for('static', filename='llg.png') }}" alt="Middlesex University Logo" style="display:block; margin:auto;">
+        <br><br>
+        <h2>Secure Login</h2>
+        <form action="/submit_form" method="post">
+            <input type="text" id="username" name="username" placeholder="IT User ID or Username" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <a href="#">Forgotten your password? | </a>  <a href="#">Register for 2FA/password reset</a>
+        <p>
+            After a successful sign in, we use a cookie in your browser to track your session. You can refer to our <a href="#">Cookie Policy</a> for more details.<br><br>
+            By signing in, you agree to our <a href="#">Privacy Policy</a>.
+        </p>
+        <br>
+            <input type="submit" value="Sign in">
+        </form>
+        
+    </div>
+</body>
+</html>
