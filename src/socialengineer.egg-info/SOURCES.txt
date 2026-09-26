@@ -1,0 +1,10 @@
+pyproject.toml
+src/socialengineer/__init__.py
+src/socialengineer/cli.py
+src/socialengineer/config.py
+src/socialengineer.egg-info/PKG-INFO
+src/socialengineer.egg-info/SOURCES.txt
+src/socialengineer.egg-info/dependency_links.txt
+src/socialengineer.egg-info/entry_points.txt
+src/socialengineer.egg-info/requires.txt
+src/socialengineer.egg-info/top_level.txt

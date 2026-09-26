@@ -1,0 +1,39 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Testing / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.ruff_cache/
+.mypy_cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Runtime
+*.log
+uploads/
+data/*
+!data/.gitkeep
+
+# Generated email-harvester output
+Social-Engineer/emailHarvester/Emails/*.csv
+Social-Engineer/emailHarvester/Emails/*.json
+Social-Engineer/emailHarvester/Emails/*.xlsx
+
+# Sensitive legacy output
+Social-Engineer/websitecloner/credentials.txt

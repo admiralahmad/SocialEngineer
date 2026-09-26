@@ -1,0 +1,2 @@
+[console_scripts]
+socialengineer = socialengineer.cli:main

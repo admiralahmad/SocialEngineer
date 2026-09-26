@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: socialengineer
+Version: 2.0.0.dev0
+Summary: Social engineering awareness and security simulation framework
+Author: Ahmad Tijjani Saidu
+Requires-Python: >=3.12
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: flask>=3.0
+Requires-Dist: jinja2>=3.1
+Requires-Dist: openpyxl>=3.1
+Requires-Dist: pandas>=2.2
+Requires-Dist: python-dotenv>=1.0
+Requires-Dist: requests>=2.32
+Requires-Dist: rich>=13.9
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"
+Requires-Dist: ruff>=0.6; extra == "dev"
